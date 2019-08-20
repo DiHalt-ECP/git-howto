@@ -14,6 +14,11 @@ git checkout --orphan <NEW_BRANCH>
 git checkout --orphan <NEW_BRANCH>
 git reset --hard
 ```
+or
+```shell
+git checkout --orphan <branchname>
+git rm --cached -r .      # git rm -rf .
+```
 
 Так же параметр --orphan дает возможность создать новую ветку с определенного коммита:
 ```shell
