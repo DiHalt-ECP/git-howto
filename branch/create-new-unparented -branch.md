@@ -12,12 +12,12 @@ git checkout --orphan <NEW_BRANCH>
 Если вы хотите создать новую пустую ветку — вам нужно скомбинировать 2 команды:
 ```shell
 git checkout --orphan <NEW_BRANCH>
-git reset --hard
+git rm -rf .                          # git reset --hard
 ```
 or
 ```shell
 git checkout --orphan <branchname>
-git rm --cached -r .      # git rm -rf .
+git rm --cached -r .
 ```
 
 Так же параметр --orphan дает возможность создать новую ветку с определенного коммита:
