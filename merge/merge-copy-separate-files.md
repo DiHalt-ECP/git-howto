@@ -7,7 +7,7 @@
 Извлечь путь (и) из ветки, которую вы хотите объединить,
 ```shell
 $ git checkout source_branch -- <paths>...
-
+```
 или выборочно объединить куски
 ```shell
 $ git checkout -p source_branch -- <paths>...
